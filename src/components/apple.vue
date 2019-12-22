@@ -23,5 +23,6 @@ export default {
 <style scoped>
 .wrapper {
   color: red;
+  width: 80px;
 }
 </style>
