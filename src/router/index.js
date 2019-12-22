@@ -4,6 +4,7 @@ import Router from 'vue-router'
 // import app1 from '@/components/app1'
 import apple from '@/components/apple'
 import banana from '@/components/banana'
+import redapple from '@/components/subcom/redapple'
 
 Vue.use(Router)
 
@@ -21,8 +22,13 @@ export default new Router({
     //   component: app1
     // }
     {
+      // path: '/apple/:color/detail/:type',
       path: '/apple',
-      component: apple
+      component: apple,
+      children: [{
+        path: 'red',
+        component: redapple
+      }]
     },
     {
       path: '/banana',

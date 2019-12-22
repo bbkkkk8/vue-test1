@@ -10,7 +10,7 @@
 export default {
   data () {
     return {
-      msg: 'I am apple'
+      msg: 'I am redapple'
     }
   },
   methods: {
